@@ -1,0 +1,10 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <StackLayout class="weather-home container">
+      <StackLayout class="overlay">
+        <StackLayout class="row">
+          <Label text="Current weather for" class="mainText"/>
+          <TextField id="zip" text="{{ zip }}" class="zipCode mainText"/>
+        </StackLayout>
+      </StackLayout>
+  </StackLayout>
+</Page>

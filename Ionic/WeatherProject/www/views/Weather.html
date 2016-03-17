@@ -1,0 +1,18 @@
+<ion-view>
+	<ion-content overflow-scroll="false" class="weather-home container">
+    <div class="overlay">
+      <div class="row">
+        <label class="mainText">Current weather for</label>
+        <input type="text" class="zipCode mainText" ng-model="search" ng-keypress="loadWeather(search,$event)"></input>
+      </div>
+
+      <div ng-if="state" class="forecast">
+        <img src="{{props.icon}}" class="icon"/>
+        <label class="bigText">{{props.main}}</label>
+        <div class="mainText2">City : {{props.city}}</div>
+        <div class="mainText2">Current condition : {{props.description}}</div>
+        <div class="bigText">{{props.temp}} °C</div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
