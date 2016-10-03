@@ -3,7 +3,8 @@
     <div class="overlay">
       <div class="row">
         <label class="mainText">Current weather for</label>
-        <input type="text" class="zipCode mainText" ng-model="search" ng-keypress="loadWeather(search,$event)"></input>
+        <input type="text" class="zipCode mainText" ng-model="search" ng-keypress="loadWeather(search,$event)">
+        <button class="button icon ion-alert" ng-click="searchWeather(search)"></button>
       </div>
 
       <div ng-if="state" class="forecast">

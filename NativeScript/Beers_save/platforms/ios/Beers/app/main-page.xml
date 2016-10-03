@@ -1,0 +1,19 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <Page.actionBar>
+    <ActionBar title="NativeScript Beers" android.icon="res://ic_test"/>
+  </Page.actionBar>
+  <StackLayout orientation="vertical">
+
+      <ListView items="{{ beers }}">
+          <ListView.itemTemplate>
+            <StackLayout orientation="horizontal">
+              <Image width="100px" height="100px" src="{{img}}" />
+              <StackLayout orientation="vertical">
+                <Label id="name" text="{{ name }}" class="beerName" />
+                <Label id="description" text="{{ description }}" textWrap="true" />
+              </StackLayout>
+            </StackLayout>
+          </ListView.itemTemplate>
+      </ListView>
+  </StackLayout>
+</Page>
