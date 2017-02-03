@@ -26,6 +26,6 @@ Le répertoire ``NativeScript/CamPhoneApp`` contient le code de l'application Ca
 
 ### ReactNative
 
-Le répertoire ``ReactNative/Beers`` contient le code de l'application WeatherProject.
+Le répertoire ``ReactNative/Beers`` contient le code de l'application Beers.
 
 Le répertoire ``ReactNative/CamPhoneApp`` contient le code de l'application CamPhoneApp.
